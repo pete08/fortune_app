@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   # namespace :api do
   #   get "/photos" => "photos#index"
   # end
+
+  namespace :api do
+    get "/fortune" => "my_examples#fortunepull"
+  end
+
+  namespace :api do
+    get "/lottery" => "my_examples#lottery"
+  end
+
 end
